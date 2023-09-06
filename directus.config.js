@@ -2,6 +2,7 @@
 module.exports = function (env) {
     return {
         // Railway inputs
+        LOG_LEVEL: env.LOG_LEVEL || 'info',
         ADMIN_EMAIL: env.ADMIN_EMAIL,
         ADMIN_PASSWORD: env.ADMIN_PASSWORD,
         KEY: env.KEY,
