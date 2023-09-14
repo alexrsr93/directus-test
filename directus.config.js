@@ -12,7 +12,7 @@ module.exports = function (env) {
         PORT: env.PORT,
 
         // Reference: https://docs.railway.app/develop/variables#railway-provided-variables
-        PUBLIC_URL: `https://directus-test-dev.up.railway.app`,
+        PUBLIC_URL: env.PUBLIC_URL,
 
         // Database variables from Railway PostgreSQL Plugin
         // Reference: https://docs.railway.app/plugins/postgresql
