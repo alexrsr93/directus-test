@@ -17,10 +17,13 @@ module.exports = function (env) {
         // Database variables from Railway PostgreSQL Plugin
         // Reference: https://docs.railway.app/plugins/postgresql
         DB_CLIENT: 'pg',
-        DB_HOST: env.PGHOST,
-        DB_PORT: env.PGPORT,
+        DB_HOST: env.NEON_HOST,
+        DB_PORT: env.NEON_PORT,
         DB_DATABASE: env.PGDATABASE,
         DB_USER: env.PGUSER,
         DB_PASSWORD: env.PGPASSWORD,
+        DB_SSL: {
+            rejectUnauthorized: false,
+        },
     };
 };
